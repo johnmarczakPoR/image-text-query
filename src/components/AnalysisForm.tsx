@@ -23,7 +23,7 @@ export const AnalysisForm = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:8080/api/analyze', {
+      const response = await fetch('/api/analyze-image', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
